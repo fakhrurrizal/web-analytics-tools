@@ -21,7 +21,9 @@ Aplikasi ini mampu menganalisis website berdasarkan **input URL, periode waktu, 
 - Visualisasi hasil dengan **Matplotlib**  
 - GUI interaktif berbasis **Tkinter**  
 - Menyimpan hasil analisis ke **CSV**, **grafik PNG**, dan **laporan ringkasan TXT**  
-- Mendukung input:
+
+
+## Mendukung input:
 - URL website
 - Tanggal awal & akhir (periode analisis)
 - Maksimal halaman yang di-crawl
