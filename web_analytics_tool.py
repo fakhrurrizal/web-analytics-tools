@@ -121,7 +121,6 @@ def save_results(results, output_dir):
     csv_path = os.path.join(output_dir, "web_analytics_results.csv")
     df.to_csv(csv_path, index=False)
 
-    # Grafik
     if not df.empty:
         for col, title, xlabel in [
             ("response_time_s", "Response Time per Page", "Waktu response (s)"),
