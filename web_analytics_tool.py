@@ -23,7 +23,6 @@ os.makedirs(BASE_OUTPUT, exist_ok=True)
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; WebAnalyticsTool/3.0)"}
 
 def fetch_url_js(url, timeout=20):
-    """Ambil halaman dan render JavaScript"""
     session = HTMLSession()
     t0 = time.time()
     resp = session.get(url, headers=HEADERS, timeout=timeout)
@@ -35,7 +34,6 @@ def fetch_url_js(url, timeout=20):
     return resp, t1 - t0, len(resp.content)
 
 def extract_onpage_info(resp, base_url):
-    """Ambil info struktural & SEO"""
     html = resp.html.html
     soup = resp.html
     title = soup.find("title", first=True)
