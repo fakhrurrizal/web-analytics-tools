@@ -157,7 +157,7 @@ class WebAnalyticsApp(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Web Analytics Tool - Final Version")
-        self.geometry("730x650")
+        self.geometry("728x650")
         self.create_widgets()
 
     def create_widgets(self):
